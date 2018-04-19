@@ -98,7 +98,8 @@ class TabViewController: TabmanViewController, PageboyViewControllerDataSource {
         for index in 0 ..< count {
             let viewController = storyboard.instantiateViewController(withIdentifier: "ChildViewController") as! ChildViewController
             viewController.index = index + 1
-            barItems.append(Item(title: "Page No. \(index + 1)"))
+            let item = Item(title: "Page No. \(index + 1)", context: nil, numberBadge: 99, fontBadge: UIFont.systemFont(ofSize: 11), colorBackgroundBadge: UIColor.red, colorTextBadge: UIColor.white) //Item(title: "Page No. \(index + 1)", context: nil, numberBadge: 100, )
+            barItems.append(item)
             
             viewControllers.append(viewController)
         }

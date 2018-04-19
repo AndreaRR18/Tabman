@@ -8,6 +8,7 @@
 
 import UIKit
 import Pageboy
+import SnapKit
 
 /// Abstract class for button bars.
 internal class TabmanButtonBar: TabmanBar {
@@ -215,6 +216,8 @@ internal class TabmanButtonBar: TabmanBar {
             let button = UIButton()
             view.addSubview(button)
             
+            
+            
             if let image = item.image, let title = item.title {
                 // resize images to fit
                 let resizedImage = image.resize(toSize: Defaults.titleWithImageSize)
@@ -270,6 +273,33 @@ internal class TabmanButtonBar: TabmanBar {
             
             customize(button, previousButton)
             previousButton = button
+            
+            //label badge
+            if item.numberBadge > 0
+            {
+                button.clipsToBounds = false
+                button.layer.masksToBounds = false
+                
+                let label: UILabel = UILabel(frame: CGRect(x: button.frame.size.width, y:3, width: 17, height:17))
+                label.backgroundColor = item.colorBackgroundBadge
+                label.layer.cornerRadius = label.frame.size.width / 2
+                label.textAlignment = .center
+                label.minimumScaleFactor = 0.1    //or whatever suits your need
+                label.adjustsFontSizeToFitWidth = true
+                label.numberOfLines = 1
+                label.font = item.fontBadge
+                label.text = "\(item.numberBadge)"
+                label.textColor = item.colorTextBadge
+                label.clipsToBounds = true
+                
+                
+                button.addSubview(label)
+                label.snp.makeConstraints { (make) -> Void in
+                    make.width.height.equalTo(17)
+                    make.top.equalTo(button.snp.top).offset(3)
+                    make.left.equalTo(button.snp.right).offset(0)
+                }
+            }
         }
     }
     

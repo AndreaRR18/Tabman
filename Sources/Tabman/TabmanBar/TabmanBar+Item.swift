@@ -26,24 +26,40 @@ public extension TabmanBar {
         public var accessibilityHint: String?
         public var accessibilityTraits: UIAccessibilityTraits?
         
+        //modifiche
+        public var numberBadge: Int = 0
+        public var fontBadge: UIFont = UIFont.systemFont(ofSize: 11)
+        public var colorBackgroundBadge: UIColor = UIColor.white
+        public var colorTextBadge: UIColor = UIColor.black
+        
         // MARK: Init
         
         /// Create an item with a title.
         ///
         /// - Parameter title: The title to display.
         /// - Parameter context: Object that can be used to provide external context for the item.
-		public init(title: String, context: Any? = nil) {
+        public init(title: String, context: Any? = nil, numberBadge: Int = 0, fontBadge: UIFont? = nil, colorBackgroundBadge: UIColor? = nil,
+colorTextBadge: UIColor? = nil) {
             self.title = title
 			self.context = context
+            self.numberBadge = numberBadge
+            self.fontBadge = fontBadge ?? self.fontBadge
+            self.colorBackgroundBadge = colorBackgroundBadge ?? self.colorBackgroundBadge
+            self.colorTextBadge = colorTextBadge ?? self.colorTextBadge
         }
         
         /// Create an item with an image.
         ///
         /// - Parameter image: Image to display.
         /// - Parameter context: Object that can be used to provide external context for the item.
-        public init(image: UIImage, context: Any? = nil) {
+        public init(image: UIImage, context: Any? = nil, numberBadge: Int = 0, fontBadge: UIFont? = nil, colorBackgroundBadge: UIColor? = nil,
+                    colorTextBadge: UIColor? = nil) {
             self.image = image
 			self.context = context
+            self.numberBadge = numberBadge
+            self.fontBadge = fontBadge ?? self.fontBadge
+            self.colorBackgroundBadge = colorBackgroundBadge ?? self.colorBackgroundBadge
+            self.colorTextBadge = colorTextBadge ?? self.colorTextBadge
         }
       
         /// Create an item with a title and an image
@@ -51,10 +67,15 @@ public extension TabmanBar {
         /// - Parameter title: The title to display.
         /// - Parameter image: Image to display.
         /// - Parameter context: Object that can be used to provide external context for the item.
-        public init(title: String, image: UIImage, context: Any? = nil) {
+        public init(title: String, image: UIImage, context: Any? = nil, numberBadge: Int = 0, fontBadge: UIFont? = nil, colorBackgroundBadge: UIColor? = nil,
+                    colorTextBadge: UIColor? = nil) {
             self.title = title
             self.image = image
 			self.context = context
+            self.numberBadge = numberBadge
+            self.fontBadge = fontBadge ?? self.fontBadge
+            self.colorBackgroundBadge = colorBackgroundBadge ?? self.colorBackgroundBadge
+            self.colorTextBadge = colorTextBadge ?? self.colorTextBadge
         }
     }
 }
