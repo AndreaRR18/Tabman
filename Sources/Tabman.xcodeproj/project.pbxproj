@@ -82,6 +82,7 @@
 		4659D9DA1FC4B617006E483F /* TabmanBarBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659D9D91FC4B617006E483F /* TabmanBarBehaviorTests.swift */; };
 		468FCAAF20723D0400654B72 /* SeparatorHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468FCAAE20723D0400654B72 /* SeparatorHeight.swift */; };
 		468FCAB020723D0700654B72 /* SeparatorHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468FCAAE20723D0400654B72 /* SeparatorHeight.swift */; };
+		8BA135F82088A17400A1060F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA135F72088A17400A1060F /* SnapKit.framework */; };
 		A76C0B46B8A5BA7E1ED51391 /* Pods_Tabman_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675BA5E76D5C2803A94F747 /* Pods_Tabman_Dev.framework */; };
 		D60136791E69893A0013CD42 /* TabmanIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60136781E69893A0013CD42 /* TabmanIndicator.swift */; };
 		D601368A1E6992BB0013CD42 /* TabmanBar+BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60136891E6992BB0013CD42 /* TabmanBar+BackgroundView.swift */; };
@@ -169,6 +170,7 @@
 		468FCAAE20723D0400654B72 /* SeparatorHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorHeight.swift; sourceTree = "<group>"; };
 		48EAAF81E817FAAF5691F364 /* Pods-TabmanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabmanTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TabmanTests/Pods-TabmanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		605FE451A05F8B6776F53CF3 /* Pods-TabmanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabmanTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TabmanTests/Pods-TabmanTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BA135F72088A17400A1060F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		9DA10AAE13C79D51060810AD /* Pods-Tabman_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabman_Dev.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Tabman_Dev/Pods-Tabman_Dev.release.xcconfig"; sourceTree = "<group>"; };
 		B39AB1424F1AFAD098C05738 /* Pods-Tabman_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabman_Dev.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Tabman_Dev/Pods-Tabman_Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		B675BA5E76D5C2803A94F747 /* Pods_Tabman_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tabman_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +238,7 @@
 			files = (
 				462F85DB201B33AE00C3D4D4 /* AutoInsetter.framework in Frameworks */,
 				463DE9912006BAB300709671 /* Pageboy.framework in Frameworks */,
+				8BA135F82088A17400A1060F /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +483,7 @@
 		D62AC1531E5AF5500020B8AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BA135F72088A17400A1060F /* SnapKit.framework */,
 				462F85D9201B339800C3D4D4 /* AutoInsetter.framework */,
 				462F85DA201B33AE00C3D4D4 /* AutoInsetter.framework */,
 				D65F101C1EAEA2730090980C /* Pageboy.framework */,
@@ -995,10 +999,10 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MJPJ2U5KUJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1026,7 +1030,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MJPJ2U5KUJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
