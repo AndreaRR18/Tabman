@@ -32,7 +32,7 @@ class TabViewController: TabmanViewController, PageboyViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         addBarButtons()
-        setUpGradientView()
+        //setUpGradientView()
         
         dataSource = self
         
@@ -61,7 +61,7 @@ class TabViewController: TabmanViewController, PageboyViewControllerDataSource {
         if let navigationController = segue.destination as? UINavigationController,
             let navigationBar = navigationController.navigationBar as? TransparentNavigationBar {
             let gradient = self.gradients[self.currentIndex ?? 0]
-            navigationBar.tintColor = gradient.midColor
+            navigationBar.tintColor = UIColor.white
         }
     }
     
@@ -98,7 +98,7 @@ class TabViewController: TabmanViewController, PageboyViewControllerDataSource {
         for index in 0 ..< count {
             let viewController = storyboard.instantiateViewController(withIdentifier: "ChildViewController") as! ChildViewController
             viewController.index = index + 1
-            let item = Item(title: "Page No. \(index + 1)", context: nil, numberBadge: 99, fontBadge: UIFont.systemFont(ofSize: 11), colorBackgroundBadge: UIColor.red, colorTextBadge: UIColor.white) //Item(title: "Page No. \(index + 1)", context: nil, numberBadge: 100, )
+            let item = Item(title: "Page No. \(index + 1)", context: nil, numberBadge: 99, fontBadge: UIFont.systemFont(ofSize: 11), colorBackgroundBadge: UIColor.white, colorTextBadge: UIColor.black) //Item(title: "Page No. \(index + 1)", context: nil, numberBadge: 100, )
             barItems.append(item)
             
             viewControllers.append(viewController)

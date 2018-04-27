@@ -280,7 +280,14 @@ internal class TabmanButtonBar: TabmanBar {
                 button.clipsToBounds = false
                 button.layer.masksToBounds = false
                 
-                let label: UILabel = UILabel(frame: CGRect(x: button.frame.size.width, y:3, width: 17, height:17))
+                let baseView: UIView = UIView(frame: CGRect(x: button.frame.size.width, y:3, width: 17, height:17))
+                baseView.backgroundColor = UIColor.clear
+                baseView.layer.shadowColor = UIColor.black.cgColor
+                baseView.layer.shadowOffset = CGSize(width: 3, height: 3)
+                baseView.layer.shadowOpacity = 0.7
+                baseView.layer.shadowRadius = baseView.frame.size.width / 2
+                
+                let label: UILabel = UILabel(frame: baseView.bounds)
                 label.backgroundColor = item.colorBackgroundBadge
                 label.layer.cornerRadius = label.frame.size.width / 2
                 label.textAlignment = .center
@@ -290,11 +297,15 @@ internal class TabmanButtonBar: TabmanBar {
                 label.font = item.fontBadge
                 label.text = "\(item.numberBadge)"
                 label.textColor = item.colorTextBadge
-                label.clipsToBounds = true
+                label.layer.masksToBounds = true
+                label.layer.borderColor = item.colorBackgroundBadge.cgColor
+                label.layer.borderWidth = 1.0
                 
+                baseView.addSubview(label)
                 
-                button.addSubview(label)
-                label.snp.makeConstraints { (make) -> Void in
+                button.addSubview(baseView)
+                
+                baseView.snp.makeConstraints { (make) -> Void in
                     make.width.height.equalTo(17)
                     make.top.equalTo(button.snp.top).offset(3)
                     make.left.equalTo(button.snp.right).offset(0)

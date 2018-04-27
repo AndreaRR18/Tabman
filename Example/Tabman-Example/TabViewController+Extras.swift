@@ -60,18 +60,10 @@ extension TabViewController {
         var integral: Double = 0.0
         let percentage = CGFloat(modf(Double(relativePosition), &integral))
         
-        var lowerGradient = self.gradient(forIndex: lowerIndex)
-        var upperGradient = self.gradient(forIndex: upperIndex)
-        ensureGradient(&lowerGradient, hasEqualColorCountTo: &upperGradient)
         
         var newColors = [UIColor]()
-        for (index, color) in lowerGradient.colors.enumerated() {
-            let otherColor = upperGradient.colors[index]
 
-            if let newColor = color.interpolate(between: otherColor, percent: percentage) {
-                newColors.append(newColor)
-            }
-        }
+        newColors.append(UIColor.white)
         self.gradientView.colors = newColors
         
         offsetLabel.textColor = .white

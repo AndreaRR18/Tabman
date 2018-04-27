@@ -38,8 +38,7 @@ public extension TabmanBar {
         ///
         /// - Parameter title: The title to display.
         /// - Parameter context: Object that can be used to provide external context for the item.
-        public init(title: String, context: Any? = nil, numberBadge: Int = 0, fontBadge: UIFont? = nil, colorBackgroundBadge: UIColor? = nil,
-colorTextBadge: UIColor? = nil) {
+        public init(title: String, context: Any? = nil, numberBadge: Int = 0, fontBadge: UIFont? = nil, colorBackgroundBadge: UIColor? = nil, colorTextBadge: UIColor? = nil) {
             self.title = title
 			self.context = context
             self.numberBadge = numberBadge
