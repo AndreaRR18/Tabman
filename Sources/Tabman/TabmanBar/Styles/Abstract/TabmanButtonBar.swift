@@ -280,12 +280,11 @@ internal class TabmanButtonBar: TabmanBar {
                 button.clipsToBounds = false
                 button.layer.masksToBounds = false
                 
-                let baseView: UIView = UIView(frame: CGRect(x: button.frame.size.width, y:3, width: 17, height:17))
+                let baseView: UIViewRadius = UIViewRadius(frame: CGRect(x: button.frame.size.width, y:3, width: 17, height:17))
                 baseView.backgroundColor = UIColor.clear
-                baseView.layer.shadowColor = UIColor.black.cgColor
-                baseView.layer.shadowOffset = CGSize(width: 1.5, height: 1.5)
-                baseView.layer.shadowOpacity = 0.7
-                baseView.layer.shadowRadius = baseView.frame.size.width / 2
+                baseView.cornerRadius = baseView.frame.size.width / 2
+                baseView.borderColor = UIColor.clear
+                baseView.borderWidth = 0
                 
                 let label: UILabel = UILabel(frame: baseView.bounds)
                 label.backgroundColor = item.colorBackgroundBadge
