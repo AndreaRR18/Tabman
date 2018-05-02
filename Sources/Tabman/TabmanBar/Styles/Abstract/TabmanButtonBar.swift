@@ -309,6 +309,11 @@ internal class TabmanButtonBar: TabmanBar {
                     make.top.equalTo(button.snp.top).offset(3)
                     make.left.equalTo(button.snp.right).offset(0)
                 }
+                
+                label.snp.makeConstraints({ (make) in
+                    make.left.right.bottom.equalTo(baseView)
+                    make.top.equalTo(baseView).offset(3)
+                })
             }
         }
     }
