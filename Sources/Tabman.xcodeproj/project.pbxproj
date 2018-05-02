@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BDE0BFA20947DFC00326571 /* UIViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE0BF920947DFC00326571 /* UIViewRadius.swift */; };
+		2BDE0BFF2094BA9C00326571 /* UIViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE0BF920947DFC00326571 /* UIViewRadius.swift */; };
 		3C46A153829A597FA2EAC9AB /* Pods_TabmanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0652BC0991E54D3132FD799E /* Pods_TabmanTests.framework */; };
 		46146FA41FD6D530004F7D78 /* UIView+DefaultTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46146FA31FD6D530004F7D78 /* UIView+DefaultTintColor.swift */; };
 		46146FA61FD6D55A004F7D78 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46146FA51FD6D55A004F7D78 /* UIView+Localization.swift */; };
@@ -918,6 +919,7 @@
 				D601368A1E6992BB0013CD42 /* TabmanBar+BackgroundView.swift in Sources */,
 				D697AB421E7C166800586DCF /* TabmanClearIndicator.swift in Sources */,
 				D62AC1AB1E5C55290020B8AE /* ContentViewScrollView.swift in Sources */,
+				2BDE0BFF2094BA9C00326571 /* UIViewRadius.swift in Sources */,
 				D66FEEF81E7C024E00E7E87A /* ChevronView.swift in Sources */,
 				D616D0AE1E77FA9300C7AA32 /* TabmanStaticBarIndicatorTransition.swift in Sources */,
 				D616D0B11E77FCDA00C7AA32 /* TabmanItemTransition.swift in Sources */,
