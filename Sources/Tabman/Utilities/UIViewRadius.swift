@@ -26,7 +26,7 @@ class UIViewRadius: UIView {
     func setup() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize.zero
-        layer.shadowRadius = 3.0
+        layer.shadowRadius = 1.5
         layer.shadowOpacity = 0.5
         super.backgroundColor = UIColor.clear
     }
