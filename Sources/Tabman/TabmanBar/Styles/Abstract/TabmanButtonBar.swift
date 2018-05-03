@@ -283,7 +283,13 @@ internal class TabmanButtonBar: TabmanBar {
                 let imageViewIconBadge:UIImageView = UIImageView(frame: CGRect(x:button.frame.size.width, y:3, width: 20, height:20))
                 imageViewIconBadge.backgroundColor = UIColor.clear
                 imageViewIconBadge.contentMode = .center
-                imageViewIconBadge.image = UIImage(named: "icona-badge")
+                
+                if let imgeBadge:UIImage = UIImage(named: "icona_badge", in: Bundle(for: type(of: self)), compatibleWith: nil)
+                {
+                    imageViewIconBadge.image = imgeBadge
+                }
+                
+                
                 
                 /*
                 let baseView: UIViewRadius = UIViewRadius(frame: CGRect(x: )
