@@ -293,7 +293,7 @@ internal class TabmanButtonBar: TabmanBar {
                 baseView.borderWidth = 0
                 */
                 let label: UILabel = UILabel(frame: imageViewIconBadge.bounds)
-                label.backgroundColor = item.colorBackgroundBadge
+                label.backgroundColor = UIColor.clear
                 label.layer.cornerRadius = label.frame.size.width / 2
                 label.textAlignment = .center
                 label.minimumScaleFactor = 0.1    //or whatever suits your need
@@ -303,7 +303,7 @@ internal class TabmanButtonBar: TabmanBar {
                 label.text = "\(item.numberBadge)"
                 label.textColor = item.colorTextBadge
                 label.layer.masksToBounds = true
-                label.layer.borderColor = item.colorBackgroundBadge.cgColor
+                label.layer.borderColor = UIColor.clear.cgColor
                 label.layer.borderWidth = 1.0
                 
                 imageViewIconBadge.addSubview(label)
