@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2BDE0BFA20947DFC00326571 /* UIViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE0BF920947DFC00326571 /* UIViewRadius.swift */; };
 		2BDE0BFF2094BA9C00326571 /* UIViewRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDE0BF920947DFC00326571 /* UIViewRadius.swift */; };
+		2BDE0C1C209B5B5200326571 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDE0C1B209B5B5200326571 /* Media.xcassets */; };
+		2BDE0C1D209B5B5200326571 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BDE0C1B209B5B5200326571 /* Media.xcassets */; };
 		3C46A153829A597FA2EAC9AB /* Pods_TabmanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0652BC0991E54D3132FD799E /* Pods_TabmanTests.framework */; };
 		46146FA41FD6D530004F7D78 /* UIView+DefaultTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46146FA31FD6D530004F7D78 /* UIView+DefaultTintColor.swift */; };
 		46146FA61FD6D55A004F7D78 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46146FA51FD6D55A004F7D78 /* UIView+Localization.swift */; };
@@ -152,6 +154,7 @@
 		01E3ED7E8507FC2B1052D975 /* Pods_Tabman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tabman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0652BC0991E54D3132FD799E /* Pods_TabmanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabmanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDE0BF920947DFC00326571 /* UIViewRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRadius.swift; sourceTree = "<group>"; };
+		2BDE0C1B209B5B5200326571 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		46146FA31FD6D530004F7D78 /* UIView+DefaultTintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+DefaultTintColor.swift"; sourceTree = "<group>"; };
 		46146FA51FD6D55A004F7D78 /* UIView+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Localization.swift"; sourceTree = "<group>"; };
 		462A65D52000FB130051C79C /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -403,6 +406,7 @@
 		D62AC0A81E5733810020B8AE = {
 			isa = PBXGroup;
 			children = (
+				2BDE0C1B209B5B5200326571 /* Media.xcassets */,
 				D62AC0B41E5733810020B8AE /* Tabman */,
 				D62AC0BF1E5733810020B8AE /* TabmanTests */,
 				D62AC0B31E5733810020B8AE /* Products */,
@@ -677,6 +681,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDE0C1D209B5B5200326571 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +689,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDE0C1C209B5B5200326571 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

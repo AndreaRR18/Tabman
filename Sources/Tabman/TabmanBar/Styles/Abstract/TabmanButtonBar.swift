@@ -280,13 +280,19 @@ internal class TabmanButtonBar: TabmanBar {
                 button.clipsToBounds = false
                 button.layer.masksToBounds = false
                 
-                let baseView: UIViewRadius = UIViewRadius(frame: CGRect(x: button.frame.size.width, y:3, width: 17, height:17))
+                let imageViewIconBadge:UIImageView = UIImageView(frame: CGRect(x:button.frame.size.width, y:3, width: 20, height:20))
+                imageViewIconBadge.backgroundColor = UIColor.clear
+                imageViewIconBadge.contentMode = .center
+                imageViewIconBadge.image = UIImage(named: "icona-badge")
+                
+                /*
+                let baseView: UIViewRadius = UIViewRadius(frame: CGRect(x: )
                 baseView.backgroundColor = UIColor.clear
                 baseView.cornerRadius = baseView.frame.size.width / 2
                 baseView.borderColor = UIColor.clear
                 baseView.borderWidth = 0
-                
-                let label: UILabel = UILabel(frame: baseView.bounds)
+                */
+                let label: UILabel = UILabel(frame: imageViewIconBadge.bounds)
                 label.backgroundColor = item.colorBackgroundBadge
                 label.layer.cornerRadius = label.frame.size.width / 2
                 label.textAlignment = .center
@@ -300,12 +306,12 @@ internal class TabmanButtonBar: TabmanBar {
                 label.layer.borderColor = item.colorBackgroundBadge.cgColor
                 label.layer.borderWidth = 1.0
                 
-                baseView.addSubview(label)
+                imageViewIconBadge.addSubview(label)
                 
-                button.addSubview(baseView)
+                button.addSubview(imageViewIconBadge)
                 
-                baseView.snp.makeConstraints { (make) -> Void in
-                    make.width.height.equalTo(17)
+                imageViewIconBadge.snp.makeConstraints { (make) -> Void in
+                    make.width.height.equalTo(20)
                     make.top.equalTo(button.snp.top).offset(3)
                     make.left.equalTo(button.snp.right).offset(0)
                 }
