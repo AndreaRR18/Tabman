@@ -310,7 +310,7 @@ internal class TabmanButtonBar: TabmanBar {
                 imageViewIconBadge.snp.makeConstraints { (make) -> Void in
                     make.width.height.equalTo(20)
                     make.top.equalTo(button.snp.top).offset(3)
-                    make.left.equalTo(button.snp.right).offset(-5)
+                    make.left.equalTo(button.snp.right).offset(-3)
                 }
             }
         }
