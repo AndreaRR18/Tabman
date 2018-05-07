@@ -289,15 +289,6 @@ internal class TabmanButtonBar: TabmanBar {
                     imageViewIconBadge.image = imgeBadge
                 }
                 
-                
-                
-                /*
-                let baseView: UIViewRadius = UIViewRadius(frame: CGRect(x: )
-                baseView.backgroundColor = UIColor.clear
-                baseView.cornerRadius = baseView.frame.size.width / 2
-                baseView.borderColor = UIColor.clear
-                baseView.borderWidth = 0
-                */
                 let label: UILabel = UILabel(frame: imageViewIconBadge.bounds)
                 label.backgroundColor = UIColor.clear
                 label.layer.cornerRadius = label.frame.size.width / 2
@@ -319,7 +310,7 @@ internal class TabmanButtonBar: TabmanBar {
                 imageViewIconBadge.snp.makeConstraints { (make) -> Void in
                     make.width.height.equalTo(20)
                     make.top.equalTo(button.snp.top).offset(3)
-                    make.left.equalTo(button.snp.right).offset(0)
+                    make.left.equalTo(button.snp.right).offset(-5)
                 }
             }
         }
