@@ -24,7 +24,7 @@ internal class TabmanButtonBar: TabmanBar {
     //
     
     private struct Defaults {
-        static let minimumItemHeight: CGFloat = 40.0
+        static let minimumItemHeight: CGFloat = 45.0
         static let itemImageSize: CGSize = CGSize(width: 25.0, height: 25.0)
         static let titleWithImageSize: CGSize = CGSize(width: 20.0, height: 20.0)
     }
