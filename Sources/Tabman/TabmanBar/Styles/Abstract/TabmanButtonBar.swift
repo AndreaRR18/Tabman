@@ -271,9 +271,6 @@ internal class TabmanButtonBar: TabmanBar {
                 button.accessibilityTraits = accessibilityTraits
             }
             
-            button.clipsToBounds = false
-            button.titleLabel?.clipsToBounds = false
-            
             customize(button, previousButton)
             previousButton = button
             
